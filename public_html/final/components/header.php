@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <?php include_once 'styles.php'?>
+   <?php include_once 'components/styles.php'?>
     <title>IDM - 232 Final</title>
 </head>
 <body>
