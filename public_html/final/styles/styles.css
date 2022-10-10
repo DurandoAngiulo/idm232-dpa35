@@ -2,7 +2,43 @@
     box-sizing: border-box;
 }
 
+:root{
+/* colors */
+--red: #E35B54;
+--black: #000000;
+--grey: #545454;
+
+}
+
 h1{
     font-family: 'Poppins', sans-serif;
-    color: red;
+   
+    
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+h3{
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.red{
+    color: var(--red);
+}
+
+.grey{
+    color: var(--grey);
+}
+
+.blac{
+    color: var(--black);
 }
