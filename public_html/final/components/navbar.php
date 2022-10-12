@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md bg-light shadow">
-  <div class="container-fluid lightGrayBackground">
+  <div class="container-fluid whiteGrayBackground">
     <a class="navbar-brand fw-semibold fst-italic" href="#"><span class="red">Good</span> Eats</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

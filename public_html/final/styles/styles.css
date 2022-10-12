@@ -17,22 +17,26 @@
 
 h1{
     font-family: 'Poppins', sans-serif;
+    color: var(--grey)
    
     
 }
 
 h2{
     font-family: 'Poppins', sans-serif;
+    color: var(--grey)
     
 }
 
 h3{
     font-family: 'Poppins', sans-serif;
+    color: var(--grey)
     
 }
 
 h4{
     font-family: 'Poppins', sans-serif;
+    color: var(--grey)
     
 }
 p{
@@ -47,13 +51,33 @@ a{
     
 }
 
-.custom-button{
-    width:auto;
-    border-radius: 15px;
-    background-color: var(--lightGray);
-    padding: .5rem 0;
+.button-flex{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
+.custom-button{
+    width: auto;
+    display: inline-block;
+    border-radius: 15px;
+    background-color: var(--lightGray);
+    padding: .5rem;
+    margin: .5rem;
+}
+
+.custom-border{
+    height: .05rem;
+    margin: 1rem 0;
+    width: auto;
+}
+
+.footer{
+    height:200px;
+    background-color: var(--grey);
+}
+
+/* colors */
 .red{
     color: var(--red);
 }
@@ -83,4 +107,11 @@ a{
 
 .redBackground{
     background-color: var(--red);
+}
+
+@media screen and (min-width: 768px){
+    .button-flex{
+        justify-content: center;
+    }
+    
 }
