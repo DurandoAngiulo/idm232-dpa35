@@ -10,6 +10,7 @@
 --grayWhite: #f6f6f6;
 --lightGray: #eeeeee;
 --white:#fff;
+--cardbg: #F5F3F3;
 
 
 
@@ -51,6 +52,13 @@ a{
     
 }
 
+/* custom text */
+.custom-category{
+    font-size: 12px;
+}
+
+/* Custom component classes */
+
 .button-flex{
     display:flex;
     flex-wrap: wrap;
@@ -77,6 +85,12 @@ a{
     background-color: var(--grey);
 }
 
+.timer{
+    width: 25%;
+}
+.stars{
+    width: 80%;
+}
 /* colors */
 .red{
     color: var(--red);
@@ -89,17 +103,13 @@ a{
 .white{
     color: var(--white);
 }
-
-.grayWhiteBackground{
-    background-color: var(--grayWhite);
-}
-
-
 .black{
     color: var(--black);
 }
 
-
+.grayWhiteBackground{
+    background-color: var(--grayWhite);
+}
 
 .grayBackground{
     background-color: var(--grey);
@@ -107,6 +117,10 @@ a{
 
 .redBackground{
     background-color: var(--red);
+}
+
+.cardBackground{
+    background-color: var(--cardbg);
 }
 
 @media screen and (min-width: 768px){
