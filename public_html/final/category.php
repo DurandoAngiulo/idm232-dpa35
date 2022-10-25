@@ -16,18 +16,17 @@
         </div>
         <div class="custom-border redBackground"></div>
         <div class="container p-0  mt-5">
-        <div class="row  d-flex justify-content-center">
-            <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div>
-            <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div>
-            <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div>
-            <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div>
-            <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div> 
-            <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div> 
-            <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div> 
-            <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div>       
+            <div class="row  d-flex justify-content-center">
+                <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div>
+                <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div>
+                <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div>
+                <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div>
+                <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div> 
+                <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div> 
+                <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div> 
+                <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div>       
+            </div>
         </div>
-    
-    </div>
     </div>
     <div class="footer mt-4">
 <?php include_once 'components/footer.php'; ?>
