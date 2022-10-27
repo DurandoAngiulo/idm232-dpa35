@@ -89,5 +89,6 @@
 </div>
 </div>
 <div class="footer">
+<p class="text-center">Durando Angiulo 2022</p>
 </div>
 <?php include_once 'components/footer.php'; ?>

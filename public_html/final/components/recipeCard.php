@@ -1,4 +1,5 @@
-<div class="card cardBackground border-0 shadow" style="width: 16rem;">
+<a href="recipe.php"> 
+  <div class="card cardBackground border-0 shadow" style="width: 16rem;">
   <img class="card-img-top" src="https://via.placeholder.com/300x150" alt="Card image cap">
   <div class="card-body p-2">
   <p class='custom-category grey'>Breakfast • Lunch</p>
@@ -15,3 +16,4 @@
     
   </div>
 </div>
+</a>

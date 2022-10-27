@@ -49,6 +49,7 @@ p{
 
 a{
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
     
 }
 
@@ -81,8 +82,8 @@ a{
 }
 
 .footer{
-    height:200px;
-    background-color: var(--grey);
+    height:100px;
+    background-color: var(--cardbg);
 }
 
 .timer{

@@ -42,7 +42,10 @@
                 <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div> 
             </div>
         </div>
+      
         <div class="footer mt-4">
+        <p class="text-center">Durando Angiulo 2022</p>
+        </div>   
 <?php include_once 'components/footer.php'; ?>
 
    
