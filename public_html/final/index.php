@@ -16,8 +16,8 @@
             </div>
         </div>
        
-        <div class="p-0 mt-3 mx-0">  
-            <div class="row w-100 d-flex justify-content-between m-0">
+        <div class="p-lg-0 mt-3 mx-0">  
+            <div class="row w-100 d-flex justify-content-around justify-content-lg-between m-0">
                 <div class="col-12 mt-3"><h1 class='mt-2'>Popular <span class="fst-italic red">Recipes</span></h1></div>
                 <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div>
                 <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div>
