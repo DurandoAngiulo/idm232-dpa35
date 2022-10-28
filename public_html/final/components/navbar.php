@@ -9,7 +9,7 @@
         <a class="nav-link" href="recipe.php">Meals</a>
         <a class="nav-link" href="category.php">Explore</a>
         <a class="nav-link me-auto" href='#'>News</a>
-        <a class='nav-link' href="search.php"><img src="media/search.svg"></a>
+        <a class='nav-link' href="search.php"><img src="photos/search.svg"></a>
         <a class="nav-link red" href='#'>Log In</a>
         <a class="nav-link" href='#'>Sign Up</a>
       </div>
