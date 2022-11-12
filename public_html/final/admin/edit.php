@@ -1,7 +1,7 @@
 <?php
 
 include_once __DIR__ . '/../app.php';
-$page_title = 'Edit Users';
+$page_title = 'Edit recipe';
 include_once __DIR__ . '/../_components/header.php';
 ?>
 
@@ -20,59 +20,44 @@ if ($result) {
 ?>
 
 <div class="">
-  <div class="">
-    <div class="">
-      <div class="">
+      <div class="px-3">
         <h1 class="">Edit User</h1>
       </div>
-    </div>
-    <div class="">
-      <div class="">
-        <div class="">
-          <div class="">
+          <div class="px-3">
             <form action="<?php echo site_url(); ?>/_includes/process-edit-recipe.php" method="POST">
-              <div class="block">
-                <label for="">Title</label>
-                <input class="border-black border-2" type="text" name="title"
+              <div class="block input-field-flex-lg">
+                <label for="" class="form-label fs-5">Title</label>
+                <input class="form-control" type="text" name="title"
                   value="<?php echo $recipe['title']?>">
               </div>
-
-              <div class="block">
-                <label for="">Ingredients</label>
-                <input class="border-black border-2" type="text" name="ingredients"
-                  value="<?php echo $recipe['ingredients']?>">
+              <div class=" block input-field-flex-sm mt-2">
+                <label for=""class="form-label fs-5">Prep-Time</label>
+                <input class="form-control" type="text" name="prepTime" value="<?php echo $recipe['prepTime']?>">
               </div>
-              <div class=" block">
-                <label for="">Directions</label>
-                <input class="border-black border-2" type="text" name="directions" value="<?php echo $recipe['directions']?>">
+              <div class=" block input-field-flex-sm mt-2">
+                <label for=""class="form-label fs-5">Cook-Time</label>
+                <input class="form-control" type="text" name="cookTime" value="<?php echo $recipe['cookTime']?>">
               </div>
-              <div class=" block">
-                <label for="">Prep-Time</label>
-                <input class="border-black border-2" type="text" name="prepTime" value="<?php echo $recipe['prepTime']?>">
+              <div class=" block input-field-flex-sm mt-2">
+                <label for="" class="form-label fs-5">Yield</label>
+                <input class="form-control" type="text" name="yield" value="<?php echo $recipe['yield']?>">
               </div>
-              <div class=" block">
-                <label for="">Cook-Time</label>
-                <input class="border-black border-2" type="text" name="cookTime" value="<?php echo $recipe['cookTime']?>">
+              <div class="block input-field-flex-lg mt-2">
+                <label for=""class="form-label fs-5">Ingredients</label>
+                <input class="form-control js-tinymce" type="text" name="ingredients"value="<?php echo $recipe['ingredients']?>">
               </div>
-              <div class=" block">
-                <label for="">Yield</label>
-                <input class="border-black border-2" type="text" name="yield" value="<?php echo $recipe['yield']?>">
+              <div class=" block input-field-flex-lg mt-2">
+                <label for=""class="form-label fs-5">Directions</label>
+                <input class="form-control js-tinymce" type="text" name="directions" value="<?php echo $recipe['directions']?>">
               </div>
-              <div class=" block">
-                <label for="">Image Url</label>
-                <input class="border-black border-2" type="text" name="imageUrl" value="<?php echo $recipe['imageUrl']?>">
+              <div class=" block input-field-flex-lg my-2">
+                <label for=""class="form-label fs-5">Image Url</label>
+                <input class="form-control" type="text" name="imageUrl" value="<?php echo $recipe['imageUrl']?>">
               </div>
-              <input class=" nline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4
-                  py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2
-                  focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto" type="submit" value="Submit">
-
+              <button type="submit" class="btn redBackground text-white">Submit</button>
               <input type="hidden" name="id" value="<?php echo $recipe['id']?>">
             </form>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 
 

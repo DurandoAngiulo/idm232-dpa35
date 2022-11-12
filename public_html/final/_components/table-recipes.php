@@ -2,20 +2,21 @@
 if (!isset($result)) {
     echo '$recipes variable is not defined. Please check the code.';
 }
-?>
-            <table class="">
+?>    
+          <div class="table-responsive">
+            <table class="table table-hover">
               <thead class="">
                 <tr>
-                  <th scope="col" class="">ID</th>
-                  <th scope="col" class="">Title</th>
-                  <th scope="col" class="">Ingredients</th>
-                  <th scope="col" class="">Directions</th>
-                  <th scope="col" class="">Prep Time</th>
-                  <th scope="col" class="">Cook Time</th>
-                  <th scope="col" class="">Yield</th>
-                  <th scope="col" class="">Image</th>
+                  <th scope="col" class="grey">ID</th>
+                  <th scope="col" class="grey">Title</th>
+                  <th scope="col" class="grey">Ingredients</th>
+                  <th scope="col" class="grey">Directions</th>
+                  <th scope="col" class="grey">Prep Time</th>
+                  <th scope="col" class="grey">Cook Time</th>
+                  <th scope="col" class="grey">Yield</th>
+                  <th scope="col" class="grey">Image Url</th>
                   <th scope="col" class="">
-                    <span class="">Edit</span>
+                    <!-- <span class="">Edit</span> -->
                   </th>
                 </tr>
               </thead>
@@ -24,19 +25,21 @@ if (!isset($result)) {
     $site_url = site_url();
     while ($recipe = mysqli_fetch_array($result)) {
         echo "<tr>
-                <td class='whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6'>{$recipe['id']}</td>
-                <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$recipe['ingredients']} {$recipe['title']}</td>
-                <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$recipe['directions']}</td>
-                <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$recipe['prepTime']}</td>
-                <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$recipe['cookTime']}</td>
-                <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$recipe['yield']}</td>
-                <td class='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>{$recipe['imageUrl']}</td>
-                <td class='relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6'>
-                  <a href='{$site_url}/admin/edit.php?id={$recipe['id']}' class='text-indigo-600 hover:text-indigo-900'>Edit</a>
-                  <a href='{$site_url}/admin/delete.php?id={$recipe['id']}' class='text-indigo-600 hover:text-indigo-900'>Delete</a>
+                <td class=''>{$recipe['id']}</td>
+                <td class=''>{$recipe['title']}</td>
+                <td class=''>{$recipe['ingredients']}</td>
+                <td class=''>{$recipe['directions']}</td>
+                <td class=''>{$recipe['prepTime']}</td>
+                <td class=''>{$recipe['cookTime']}</td>
+                <td class=''>{$recipe['yield']}</td>
+                <td class=''>{$recipe['imageUrl']}</td>
+                <td class=''>
+                  <a href='{$site_url}/admin/edit.php?id={$recipe['id']}' class='pe-2'>Edit</a>
+                  <a href='{$site_url}/admin/delete.php?id={$recipe['id']}' class=''>Delete</a>
                 </td>
               </tr>";
     }
 ?>
               </tbody>
             </table>
+          </div>

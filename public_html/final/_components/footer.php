@@ -1,5 +1,5 @@
   <!-- Main Content Ends -->
-  <footer class="bg-white">
+  <footer class="bg-white mt-5">
     <p class="">
       &copy;<?php echo date('Y'); ?> IDM 232. All
       rights reserved.

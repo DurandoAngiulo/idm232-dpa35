@@ -43,11 +43,27 @@ a {
   text-decoration: none;
 }
 
+label {
+  font-family: "Poppins", sans-serif;
+  color: var(--grey);
+  margin: 0;
+}
 /* custom text */
 .custom-category {
   font-size: 12px;
 }
 
+.input-field-flex-sm {
+  width: 100%;
+}
+
+.input-field-flex-sm {
+  width: 100%;
+}
+
+.input-field-flex-lg {
+  width: 100%;
+}
 /* Custom component classes */
 
 .button-flex {
@@ -114,8 +130,20 @@ a {
   background-color: var(--cardbg);
 }
 
+.w-10 {
+  width: 10%;
+}
+
 @media screen and (min-width: 768px) {
   .button-flex {
     justify-content: center;
+  }
+
+  .input-field-flex-sm {
+    width: 10%;
+  }
+
+  .input-field-flex-lg {
+    width: 75%;
   }
 }

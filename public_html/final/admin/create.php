@@ -13,57 +13,47 @@ $result = mysqli_query($db_connection, $query);
 ?>
 
 <div class="">
-  <div class="">
-    <div class="">
-      <div class="">
+    <div class="px-3">
         <h1 class="">Create User</h1>
-      </div>
     </div>
     <div class="">
-      <div class="">
-        <div class="">
-          <div class="">
+        <div class="px-3">
             <form action="<?php echo site_url(); ?>/_includes/process-create-recipe.php" method="POST">
-              <div class="block">
-                <label for="">Recipe Title</label>
-                <input class="border-black border-2 " type="text" name="title">
+              <div class="block input-field-flex-lg">
+                <label for="" class="form-label fs-5">Recipe Title</label>
+                <input class="form-control" type="text" name="title">
               </div>
 
-              <div class="block">
-                <label for="">Prep Time</label>
-                <input class="border-black border-2" type="text" name="prepTime">
+              <div class="block input-field-flex-sm mt-2">
+                <label for="" class="form-label fs-5">Prep Time</label>
+                <input class="form-control" type="text" name="prepTime">
               </div>
 
 
-              <div class="block">
-                <label for="">Cook Time</label>
-                <input class="border-black border-2" type="text" name="cookTime">
+              <div class="block input-field-flex-sm mt-2">
+                <label for="" class="form-label fs-5">Cook Time</label>
+                <input class="form-control" type="text" name="cookTime">
               </div>
-              <div class="block">
-                <label for="">Yield</label>
-                <input class="border-black border-2" type="text" name="yield">
+              <div class="block input-field-flex-sm mt-2">
+                <label for=""class="form-label fs-5">Yield</label>
+                <input class="form-control" type="text" name="yield">
               </div>
-              <div class="block">
-                <label for="">Ingredients</label>
-                <input class="border-black border-2 js-tinymce" type="text" name="ingredients">
+              <div class="block mt-2 input-field-flex-lg">
+                <label for=""class="form-label fs-5">Ingredients</label>
+                <input class="form-control js-tinymce" type="text" name="ingredients">
               </div>
-              <div class="block">
-                <label for="">Directions</label>
-                <input class="border-black border-2" type="text" name="directions">
+              <div class="block mt-2 input-field-flex-lg">
+                <label for="" class="form-label fs-5">Directions</label>
+                <input class="form-control js-tinymce" type="text" name="directions">
               </div>
-              <div class="block">
-                <label for="">Upload an Image Url</label>
-                <input class="border-black border-2" type="text" name="imageUrl">
+              <div class="block my-2 input-field-flex-lg">
+                <label for="" class="form-label fs-5">Upload an Image Url</label>
+                <input class="form-control" type="text" name="imageUrl">
               </div>
-              <input
-                class=""
-                type="submit" value="submit">
+              <button type="submit" class="btn redBackground text-white">Submit</button>
             </form>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
 
 
