@@ -1,1 +1,2 @@
-public_html/final/.env.php
+public_html/final-new/.env.local.php
+public_html/final-new/.env.production.php

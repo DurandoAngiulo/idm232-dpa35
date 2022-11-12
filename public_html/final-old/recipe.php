@@ -1,8 +1,5 @@
-<?php
-include_once __DIR__ . '/app.php';
-$page_title = 'Recipe template';
-include_once __DIR__ . '/_components/header.php';
-?>
+ <?php include_once 'components/header.php'; ?>
+ <?php include_once 'components/navbar.php'?>
  <div class="container-fluid px-5">
     <div class="container-fluid px-4 d-flex justify-content-center">
        <img src="https://via.placeholder.com/500x200" class="img-fluid w-75">
@@ -94,5 +91,4 @@ include_once __DIR__ . '/_components/header.php';
 <div class="footer">
 <p class="text-center">Durando Angiulo 2022</p>
 </div>
-<?php include_once __DIR__ . '/_components/footer.php';
-?>
+<?php include_once 'components/footer.php'; ?>

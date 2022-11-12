@@ -1,5 +1,8 @@
-<?php include_once 'components/header.php'; ?>
- <?php include_once 'components/navbar.php'?>
+<?php
+include_once __DIR__ . '/app.php';
+$page_title = 'Categories';
+include_once __DIR__ . '/_components/header.php';
+?>
     <div class="container-fluid d-flex p-0">
         <img src="https://via.placeholder.com/500x150" class="w-100">
     </div>
@@ -16,19 +19,19 @@
         </div>
         <div class="custom-border redBackground"></div>
         <div class="container p-0  mt-5">
-            <div class="row  d-flex justify-content-center">
-                <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div>
-                <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div>
-                <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div>
-                <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div>
-                <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div> 
-                <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div> 
-                <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div> 
-                <div class="col-auto mt-3"><?php include 'components/recipeCard.php'; ?></div>       
+            <div class="row  d-flex justify-content-between">
+                <div class="col-auto mt-3"><?php include '_components/recipeCard.php'; ?></div>
+                <div class="col-auto mt-3"><?php include '_components/recipeCard.php'; ?></div>
+                <div class="col-auto mt-3"><?php include '_components/recipeCard.php'; ?></div>
+                <div class="col-auto mt-3"><?php include '_components/recipeCard.php'; ?></div>
+                <div class="col-auto mt-3"><?php include '_components/recipeCard.php'; ?></div> 
+                <div class="col-auto mt-3"><?php include '_components/recipeCard.php'; ?></div> 
+                <div class="col-auto mt-3"><?php include '_components/recipeCard.php'; ?></div>       
             </div>
         </div>
     </div>
     <div class="footer mt-4">
     <p class="text-center">Durando Angiulo 2022</p>
     </div>
-<?php include_once 'components/footer.php'; ?>
+    <?php include_once __DIR__ . '/_components/footer.php';
+?>

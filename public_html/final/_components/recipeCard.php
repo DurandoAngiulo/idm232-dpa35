@@ -6,11 +6,11 @@
     <h5 class="card-title grey mb-4">Recipe Name</h5>
     <div class="row d-flex justify-content-between">
         <div class="col-6 d-flex">
-                <img class="timer img-fluid" src='./photos/timer.png'> 
+                <img class="timer img-fluid" src='./dist/images/timer.png'> 
                 <p class="align-self-center red">30 Mins</p>
         </div>
         <div class="col-6 d-flex justify-content-end">
-            <img class="stars align-self-center" src='./photos/stars.png'>
+            <img class="stars align-self-center" src='./dist/images/stars.png'>
         </div>
     </div>
     

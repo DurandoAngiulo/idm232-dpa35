@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --red: #e35b54;
+  --black: #000000;
+  --grey: #545454;
+  --grayWhite: #f6f6f6;
+  --lightGray: #eeeeee;
+  --white: #fff;
+  --cardbg: #f5f3f3;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  color: var(--grey);
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  color: var(--grey);
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  color: var(--grey);
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  color: var(--grey);
+}
+p {
+  font-family: "Poppins", sans-serif;
+  color: var(--grey);
+  margin: 0;
+}
+
+a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+/* custom text */
+.custom-category {
+  font-size: 12px;
+}
+
+/* Custom component classes */
+
+.button-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.custom-button {
+  width: auto;
+  display: inline-block;
+  border-radius: 15px;
+  background-color: var(--lightGray);
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.custom-border {
+  height: 0.05rem;
+  margin: 1rem 0;
+  width: auto;
+}
+
+.footer {
+  height: 100px;
+  background-color: var(--cardbg);
+}
+
+.timer {
+  width: 25%;
+}
+.stars {
+  width: 80%;
+}
+/* colors */
+.red {
+  color: var(--red);
+}
+
+.grey {
+  color: var(--grey);
+}
+
+.white {
+  color: var(--white);
+}
+.black {
+  color: var(--black);
+}
+
+.grayWhiteBackground {
+  background-color: var(--grayWhite);
+}
+
+.grayBackground {
+  background-color: var(--grey);
+}
+
+.redBackground {
+  background-color: var(--red);
+}
+
+.cardBackground {
+  background-color: var(--cardbg);
+}
+
+@media screen and (min-width: 768px) {
+  .button-flex {
+    justify-content: center;
+  }
+}
