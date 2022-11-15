@@ -1,7 +1,7 @@
 <?php
 
 include_once __DIR__ . '/../app.php';
-$page_title = 'Create Users';
+$page_title = 'Create Recipe';
 include_once __DIR__ . '/../_components/header.php';
 ?>
 
@@ -14,7 +14,7 @@ $result = mysqli_query($db_connection, $query);
 
 <div class="">
     <div class="px-3">
-        <h1 class="">Create User</h1>
+        <h1 class="">Create Recipe</h1>
     </div>
     <div class="">
         <div class="px-3">
@@ -50,7 +50,7 @@ $result = mysqli_query($db_connection, $query);
                 <label for="" class="form-label fs-5">Upload an Image Url</label>
                 <input class="form-control" type="text" name="imageUrl">
               </div>
-              <button type="submit" class="btn redBackground text-white">Submit</button>
+              <button type="submit" class="btn btn-danger redBackground text-white">Submit</button>
             </form>
         </div>
     </div>

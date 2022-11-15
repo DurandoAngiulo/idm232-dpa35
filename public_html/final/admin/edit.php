@@ -54,7 +54,7 @@ if ($result) {
                 <label for=""class="form-label fs-5">Image Url</label>
                 <input class="form-control" type="text" name="imageUrl" value="<?php echo $recipe['imageUrl']?>">
               </div>
-              <button type="submit" class="btn redBackground text-white">Submit</button>
+              <button type="submit" class="btn btn-danger redBackground text-white">Submit</button>
               <input type="hidden" name="id" value="<?php echo $recipe['id']?>">
             </form>
           </div>
