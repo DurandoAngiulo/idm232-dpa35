@@ -35,8 +35,8 @@ if (!isset($result)) {
                 <td class=''>{$recipe['yield']}</td>
                 <td class='text-break'>{$recipe['imageUrl']}</td>
                 <td class=''>
-                  <a href='{$site_url}/admin/edit.php?id={$recipe['id']}' class='pe-2'>Edit</a>
-                  <a href='{$site_url}/admin/delete.php?id={$recipe['id']}' class=''>Delete</a>
+                  <a href='{$site_url}/admin/recipes/edit.php?id={$recipe['id']}' class='pe-2'>Edit</a>
+                  <a href='{$site_url}/admin/recipes/delete.php?id={$recipe['id']}' class=''>Delete</a>
                 </td>
               </tr>";
     }

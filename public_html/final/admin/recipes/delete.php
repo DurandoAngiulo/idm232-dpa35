@@ -1,5 +1,5 @@
 <?php
-include_once __DIR__ . '/../app.php';
+include_once __DIR__ . '/../../app.php';
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 } else {
@@ -12,8 +12,8 @@ $result = mysqli_query($db_connection, $query);
 
 // Check there are no errors with our SQL statement
 if ($result) {
-    redirect_to('/admin/index.php');
+    redirect_to('/admin/recipes/index.php');
 } else {
     $error_message = 'Could Not Delete User';
-    redirect_to('/admin/users?error=' . $error_message);
+    redirect_to('/admin/recipes?error=' . $error_message);
 }

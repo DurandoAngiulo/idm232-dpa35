@@ -1,7 +1,7 @@
 <?php
-include_once __DIR__ . '/../app.php';
+include_once __DIR__ . '/../../app.php';
 $page_title = 'Recipe Index';
-include_once __DIR__ . '/../_components/header.php';
+include_once __DIR__ . '/../../_components/header.php';
 
 ?>
 
@@ -29,16 +29,16 @@ $result = mysqli_query($db_connection, $query);
       <div class="my-3">
         <button type="button"
           class="btn btn-light border">
-          <a class="grey" href="<?php echo site_url() . '/admin/create.php' ?>">
+          <a class="grey" href="<?php echo site_url() . '/admin/recipes/create.php' ?>">
             Add recipe</a></button>
       </div>
     </div>
     <div class="ps-3">
-            <?php include __DIR__ . '/../_components/table-recipes.php'; ?>
+            <?php include __DIR__ . '/../../_components/table-recipes.php'; ?>
     </div>
   </div>
 </div>
 
 
 
-<?php include_once __DIR__ . '/../_components/footer.php';
+<?php include_once __DIR__ . '/../../_components/footer.php';

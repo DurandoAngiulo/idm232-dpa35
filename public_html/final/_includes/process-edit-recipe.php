@@ -25,9 +25,9 @@ var_dump($result);
 
 // Check there are no errors with our SQL statement
 if ($result) {
-    redirect_to('/admin/index.php');
+    redirect_to('/admin/recipes/index.php');
 } else {
     $error_message = 'User was not updated';
-    redirect_to('/admin/index?error=' . $error_message);
+    redirect_to('/admin/recipes/index?error=' . $error_message);
     
 }

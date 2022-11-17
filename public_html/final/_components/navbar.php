@@ -8,7 +8,7 @@
       <div class="navbar-nav container-fluid d-flex">
         <a class="nav-link" href="<?php echo site_url(); ?>/recipe.php">Meals</a>
         <a class="nav-link" href="<?php echo site_url(); ?>/category.php">Explore</a>
-        <a class="nav-link" href='<?php echo site_url(); ?>/admin/index.php'>Admin</a>
+        <a class="nav-link" href='<?php echo site_url(); ?>/admin/recipes/index.php'>Admin</a>
        
         <a class="nav-link me-auto" href='#'>News</a>
         

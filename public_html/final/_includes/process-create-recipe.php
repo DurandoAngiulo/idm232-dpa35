@@ -22,7 +22,7 @@ $result = mysqli_query($db_connection, $query);
 
 // Check there are no errors with our SQL statement
 if ($result) {
-    redirect_to('/admin');
+    redirect_to('/admin/recipes');
 } else {
     $error_message = 'Sorry there was an error creating the user';
     redirect_to('/admin/index?error=' . $error_message);

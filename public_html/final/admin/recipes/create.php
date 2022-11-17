@@ -1,8 +1,8 @@
 <?php
 
-include_once __DIR__ . '/../app.php';
+include_once __DIR__ . '/../../app.php';
 $page_title = 'Create Recipe';
-include_once __DIR__ . '/../_components/header.php';
+include_once __DIR__ . '/../../_components/header.php';
 ?>
 
 <?php
@@ -40,11 +40,11 @@ $result = mysqli_query($db_connection, $query);
               </div>
               <div class="block mt-2 input-field-flex-lg">
                 <label for=""class="form-label fs-5">Ingredients</label>
-                <input class="form-control js-tinymce" type="text" name="ingredients">
+                <textarea class=" js-tinymce" type="text" name="ingredients"></textarea>
               </div>
               <div class="block mt-2 input-field-flex-lg">
                 <label for="" class="form-label fs-5">Directions</label>
-                <input class="form-control js-tinymce" type="text" name="directions">
+                <textarea class="js-tinymce" type="text" name="directions"></textarea>
               </div>
               <div class="block my-2 input-field-flex-lg">
                 <label for="" class="form-label fs-5">Upload an Image Url</label>
@@ -58,4 +58,4 @@ $result = mysqli_query($db_connection, $query);
 
 
 
-<?php include_once __DIR__ . '/../_components/footer.php';
+<?php include_once __DIR__ . '/../../_components/footer.php';
