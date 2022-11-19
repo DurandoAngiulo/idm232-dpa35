@@ -6,7 +6,7 @@ include_once __DIR__ . '/../../_components/header.php';
 ?>
 
 <?php
-// get users data from database
+// get data from database
 $query = 'SELECT * FROM recipes';
 $result = mysqli_query($db_connection, $query);
 
