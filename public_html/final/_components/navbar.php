@@ -12,7 +12,7 @@
        
         <a class="nav-link me-auto" href='#'>News</a>
         
-        <a class='nav-link' href="search.php"><img src= "<?php echo site_url(); ?>/dist/images/search.svg"></a>
+        <a class='nav-link' href="<?php echo site_url(); ?>/search.php"><img src= "<?php echo site_url(); ?>/dist/images/search.svg"></a>
         <a class="nav-link red" href='#'>Log In</a>
         <a class="nav-link" href='#'>Sign Up</a>
       </div>

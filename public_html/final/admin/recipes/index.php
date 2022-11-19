@@ -19,6 +19,17 @@ $result = mysqli_query($db_connection, $query);
     <div class="ps-3 mt-2">
       <div class="">
         <h1 class="">Recipes</h1>
+        
+        <form action="<?php echo site_url(); ?>/admin/search/searchAdmin.php" method="GET">
+        <div class="row w-50">
+            <div class="col-sm-7">
+          <input class=" form-control" type="text" name="search" id="search" placeholder="Search"
+            >
+            </div>
+            <div class="col-sm">
+          <button class="btn btn-outline-secondary" type="submit">Search</button>
+            </div>
+        </form>
         <?php
         // If error query param exist, show error message
           if (isset($_GET['error'])) {

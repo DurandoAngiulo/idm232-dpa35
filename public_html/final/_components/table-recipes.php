@@ -33,7 +33,9 @@ if (!isset($result)) {
                 <td class=''>{$recipe['prepTime']}</td>
                 <td class=''>{$recipe['cookTime']}</td>
                 <td class=''>{$recipe['yield']}</td>
-                <td class='text-break'>{$recipe['imageUrl']}</td>
+                <td class='text-break'>
+                <img  class= 'w-50' src='{$recipe['imageUrl']}'>
+                </td>
                 <td class=''>
                   <a href='{$site_url}/admin/recipes/edit.php?id={$recipe['id']}' class='pe-2'>Edit</a>
                   <a href='{$site_url}/admin/recipes/delete.php?id={$recipe['id']}' class=''>Delete</a>

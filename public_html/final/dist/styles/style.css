@@ -104,7 +104,7 @@ label {
 }
 
 .grey {
-  color: var(--grey);
+  color: var(--grey) !important;
 }
 
 .white {
