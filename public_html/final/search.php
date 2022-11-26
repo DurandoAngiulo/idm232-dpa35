@@ -23,19 +23,6 @@ include_once __DIR__ . '/_components/header.php';
 ?>
     </div>  
          
-    <!-- <div class="container-fluid">
-        <div class="container p-0  mt-5">
-            <div class="row  d-flex justify-content-center">
-                <div class="col-auto mt-3"><?php include '_components/recipeCard.php'; ?></div>
-                <div class="col-auto mt-3"><?php include '_components/recipeCard.php'; ?></div>
-                <div class="col-auto mt-3"><?php include '_components/recipeCard.php'; ?></div>
-                <div class="col-auto mt-3"><?php include '_components/recipeCard.php'; ?></div>
-                <div class="col-auto mt-3"><?php include '_components/recipeCard.php'; ?></div> 
-                <div class="col-auto mt-3"><?php include '_components/recipeCard.php'; ?></div> 
-                <div class="col-auto mt-3"><?php include '_components/recipeCard.php'; ?></div> 
-                <div class="col-auto mt-3"><?php include '_components/recipeCard.php'; ?></div>       
-            </div>
-        </div>
-    </div> -->
+    
     <?php include_once __DIR__ . '/_components/footer.php'; ?> 
     

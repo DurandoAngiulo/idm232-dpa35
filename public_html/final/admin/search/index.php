@@ -35,7 +35,7 @@ if ($results->num_rows > 0) {
     <div class="">
       
         <h4 class="">Search Results</h4>
-       <form action="<?php echo site_url(); ?>/admin/search/searchAdmin.php" method="GET">
+       <form action="<?php echo site_url(); ?>/admin/search" method="GET">
         <div class="row w-50">
             <div class="col-sm-7">
           <input class=" form-control" type="text" name="search" id="search" placeholder="Search"
