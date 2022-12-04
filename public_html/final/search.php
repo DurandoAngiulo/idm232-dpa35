@@ -3,7 +3,7 @@ include_once __DIR__ . '/app.php';
 $page_title = 'Search';
 include_once __DIR__ . '/_components/header.php';
 ?>
-    <div class="cardBackground p-5">
+    <div class="cardBackground p-5 mb-5">
         <h4> Search Recipes...</h4>
     <form action="<?php echo site_url(); ?>/admin/search" method="GET">
         <div class="row w-50">
@@ -22,6 +22,7 @@ include_once __DIR__ . '/_components/header.php';
           }
 ?>
     </div>  
+  </div>
          
     
     <?php include_once __DIR__ . '/_components/footer.php'; ?> 

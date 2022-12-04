@@ -43,6 +43,10 @@ if ($result) {
                 <input class="form-control" type="text" name="yield" value="<?php echo $recipe['yield']?>">
               </div>
               <div class="block input-field-flex-lg mt-2">
+                <label for=""class="form-label fs-5">Description</label>
+                <textarea class="js-tinymce" type="text" name="recipeDescription"value=""><?php echo $recipe['recipeDescription']?></textarea>
+              </div>
+              <div class="block input-field-flex-lg mt-2">
                 <label for=""class="form-label fs-5">Ingredients</label>
                 <textarea class="js-tinymce" type="text" name="ingredients"value=""><?php echo $recipe['ingredients']?></textarea>
               </div>

@@ -1,98 +1,56 @@
 <?php
 include_once __DIR__ . '/app.php';
-$page_title = 'Recipe template';
+
+// get users data from database
+$query = "SELECT * FROM recipes WHERE id = {$_GET['id']}";
+$result = mysqli_query($db_connection, $query);
+if ($result) {
+    // Get row from results and assign to $user variable;
+    $recipe = mysqli_fetch_assoc($result);
+} else {
+    $error_message = 'recipe does not exist';
+    // redirect_to('/admin/users?error=' . $error_message);
+}
+
+$page_title = $recipe['title'];
 include_once __DIR__ . '/_components/header.php';
 ?>
+
  <div class="container-fluid px-5">
-    <div class="container-fluid px-4 d-flex justify-content-center">
-       <img src="https://via.placeholder.com/500x200" class="img-fluid w-75">
+    <div class="container-fluid px-4 mt-5 d-flex justify-content-center">
+       <img src="<?php echo $recipe['imageUrl'] ?>" class="recipeImage rounded-2 redBorder">
     </div>   
        <div class="row mt-3">
             <div class="col">
-                <h1 class="red text-center" >Recipe Title</h1>
+                <h1 class="red text-center" ><?php echo $recipe['title']?></h1>
             </div>
-       </div>    
-    <div class="row mt-1">
-        <div class="col">
-            <h4 class="text-center fw-light fst-italic grey" >Recipe excerpt/description</h4>
-        </div>
-    </div>
+       </div>  
+       <div>
+        <h4 class="text-center fst-italic fw-light"><?php echo $recipe['recipeDescription']?></h4>
+       </div>  
     <div class="button-flex">
-        <div class="custom-button"><p class="fw-semibold">Prep Time: <span class= "fw-light">XX Min</span></p></div>
-        <div class="custom-button"><p class="fw-semibold">Cook Time: <span class= "fw-light">XX Min</span></p></div>
-        <div class="custom-button"><p class="fw-semibold">Yield: <span class= "fw-light">XX Servings</span></p></div>
-        <div class="custom-button grayBackground pe-5"><p class="fw-semibold white">Share</p></div>
-        <div class="custom-button redBackground pe-5"><p class="fw-semibold white">Print</p></div>
+        <div class="custom-button"><p class="fw-semibold">Prep Time: <span class= "fw-light"><?php echo $recipe['prepTime']?></span></p></div>
+        <div class="custom-button"><p class="fw-semibold">Cook Time: <span class= "fw-light"><?php echo $recipe['cookTime']?></span></p></div>
+        <div class="custom-button"><p class="fw-semibold">Yield: <span class= "fw-light"><?php echo $recipe['yield']?></span></p></div>
+        <div class="custom-button grayBackground d-flex"><p class="fw-semibold white">Share</p><span class= "ps-2"><img class = "share" src="<?php echo site_url(); ?>/dist/images/share.png"></span></div>
+        <div class="custom-button redBackground d-flex"><p class="fw-semibold white">Print</p><span class= "ps-2"><img class = "share" src="<?php echo site_url(); ?>/dist/images/printer.png"></span></div>
     </div>
     <div class="custom-border redBackground"></div>
-    <div class="row justify-content-sm-center mb-5">
-        <div class="col-sm-12 col-md-6 ">
+    <div class="row justify-content-sm-center mb-5 px-5">
+        <div class="col-sm-12 mb-3 px-5">
             <h3 class ="text-md-start"> Ingrediants</h3>
             <ul class="ps-3">
-                <li> ingredient</li>
-                <li> ingredient</li>
-                <li> ingredient</li>
-                <li> ingredient</li>
-                <li> ingredient</li>
+            <?php echo $recipe['ingredients']?>
             </ul>
         </div>
-        <div class="col">
+        <div class="col px-5">
             <h3 class="red text-md-start" >Directions</h3>
-            <ul class="ps-3">
-                <li> Step1: lorem ipsum</li>
-                <li> Step2: lorem ipsum</li>
-                <li> Step3: lorem ipsum</li>
-                <li> Step 4: lorem ipsum</li>
-                <li> Step 5: lorem ipsum</li>
-            </ul>
+            <p class="ps-3">
+            <?php echo $recipe['directions']?>
+            </p>
         </div>
     </div>
-    <div class="row my-3">
-        <div class="col">
-            <h2 class="text-center text-md-start" >More Recipes You'll <span class="red">Love</span></h2>
-        </div>
-    </div>
-    <div class=" mb-5 row row-cols-1 row-cols-md-4 g-4">
-  <div class="col">
-    <div class="card border-0 h-100 shadow">
-      <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="...">
-      <div class="card-body grayWhiteBackground">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">recipe categories</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card border-0 h-100 shadow">
-      <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="...">
-      <div class="card-body grayWhiteBackground">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">recipe categories</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card border-0 h-100 shadow">
-      <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="...">
-      <div class="card-body grayWhiteBackground">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">recipe categories</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card border-0 h-100 shadow">
-      <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="...">
-      <div class="card-body grayWhiteBackground">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">recipe categories</p>
-      </div>
-    </div>
-  </div>
 </div>
-</div>
-<div class="footer">
-<p class="text-center">Durando Angiulo 2022</p>
 </div>
 <?php include_once __DIR__ . '/_components/footer.php';
 ?>

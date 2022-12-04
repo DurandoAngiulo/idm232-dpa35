@@ -59,38 +59,34 @@ if ($results->num_rows > 0) {
   }?>
       
     </div>
-
+    <div class="row px-3">
     <?php
       if ($recipes_results) {
           while ($recipes_results = mysqli_fetch_assoc($results)) {
               echo "
-              <div class='card cardBackground border-0 shadow mt-3' style='width: 17rem;'>
-                <img class='card-img-top' src='{$recipes_results['imageUrl']}'>
-            <a href='recipe.php'> 
-            <div class='card-body p-2>
-                
-                <h5 class='card-title grey mb-4'>{$recipes_results['title']}</h5>
-                <div class='row d-flex justify-content-between'>
-                    <div class='col-7 d-flex'>
-                        <img class='timer flex-shrink-0' src='../../dist/images/timer.png'> 
-                        <p class='align-self-center red'>{$recipes_results['cookTime']}</p>
-                    </div>
-                    <div class='col-5 d-flex justify-content-end'>
-                        <img class='stars align-self-center' src='../../dist/images/stars.png'>
-                    </div>
-                </div> 
-            </div>
-            
-            </div>
+              <a class='col-auto mt-3' href='recipe.php?id={$recipes_results['id']}'>
+              <div class='card cardBackground border-0 shadow' style='width: 16rem;'>
+                  <img class='card-img-top' src='{$recipes_results['imageUrl']}'>
+                  <div class='card-body p-2'>
+                      <p class='card-title grey mb-4 fw-normal'>{$recipes_results['title']}</p>
+                      <div class='row d-flex justify-content-between'>
+                          <div class='col-7 d-flex'>
+                              <img class='timer flex-shrink-0' src='../../dist/images/timer.png'> 
+                              <p class='align-self-center red'>{$recipes_results['cookTime']}</p>
+                          </div>
+                          <div class='col-5 d-flex justify-content-end'>
+                              <img class='stars align-self-center' src='../../dist/images/stars.png'>
+                          </div>
+                      </div> 
+                  </div>
+              </div>
+          </a>   
               
               ";
-          }
-      }
-?>
-
-  
+             }
+            }
+            ?>
+    </div>
 </div>
-
-
-
+</div>
 <?php include_once __DIR__ . '/../../_components/footer.php';

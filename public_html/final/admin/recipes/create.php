@@ -39,6 +39,10 @@ $result = mysqli_query($db_connection, $query);
                 <input class="form-control" type="text" name="yield">
               </div>
               <div class="block mt-2 input-field-flex-lg">
+                <label for=""class="form-label fs-5">Description</label>
+                <textarea class=" js-tinymce" type="text" name="recipeDescription"></textarea>
+              </div>
+              <div class="block mt-2 input-field-flex-lg">
                 <label for=""class="form-label fs-5">Ingredients</label>
                 <textarea class=" js-tinymce" type="text" name="ingredients"></textarea>
               </div>

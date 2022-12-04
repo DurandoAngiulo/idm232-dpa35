@@ -8,11 +8,12 @@ if (!isset($result)) {
     $site_url = site_url();
     while ($recipe = mysqli_fetch_array($result)) {
         echo "
-        <div class='col-auto mt-3'>
+        
+        <a class='col-auto mt-3' href='recipe.php?id={$recipe['id']}'>
             <div class='card cardBackground border-0 shadow' style='width: 16rem;'>
                 <img class='card-img-top' src='{$recipe['imageUrl']}'>
-                <div class='card-body p-2>
-                    <h5 class='card-title grey mb-4'>{$recipe['title']}</h5>
+                <div class='card-body p-2'>
+                    <p class='card-title grey mb-4 fw-normal'>{$recipe['title']}</p>
                     <div class='row d-flex justify-content-between'>
                         <div class='col-7 d-flex'>
                             <img class='timer flex-shrink-0' src='./dist/images/timer.png'> 
@@ -24,11 +25,9 @@ if (!isset($result)) {
                     </div> 
                 </div>
             </div>
-        </div>    
+        </a>   
         ";
     }
 ?>
-            <!-- </div>
-          </div> -->
             
               
