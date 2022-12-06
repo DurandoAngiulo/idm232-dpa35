@@ -7,7 +7,7 @@ include_once __DIR__ . '/../../_components/header.php';
 
 <?php
 // get data from database
-$query = 'SELECT * FROM recipes';
+$query = 'SELECT * FROM recipes ORDER BY title';
 $result = mysqli_query($db_connection, $query);
 
 ?>

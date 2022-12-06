@@ -1,5 +1,5 @@
   <!-- Main Content Ends -->
-  <div class="mt-5">
+  <div class="mt-5 ">
     <p class="text-center mb-2">
       &copy;<?php echo date('Y'); ?> Durando Angiulo, IDM 232. All
       rights reserved.

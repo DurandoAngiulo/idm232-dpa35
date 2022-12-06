@@ -23,8 +23,8 @@ $result = mysqli_query($db_connection, $query);
         <div class="d-flex justify-content-center">
             <div class="custom-border redBackground w-75"></div>
         </div>
-        <div class="p-lg-0 mt-3 mx-0 d-flex justify-content-center">  
-            <div class="row w-100 d-flex justify-content-center justify-content-md-start  m-0">
+        <div class="p-lg-0 mt-3 mx-4 d-flex justify-content-center">  
+            <div class="row w-100 d-inline-flex justify-content-center m-0">
              <?php include __DIR__ . '/_components/recipeCards.php'; ?>
             </div>
         </div>

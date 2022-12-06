@@ -10,10 +10,10 @@ if (!isset($result)) {
         echo "
         
         <a class='col-auto mt-3' href='recipe.php?id={$recipe['id']}'>
-            <div class='card cardBackground border-0 shadow' style='width: 16rem;'>
+            <div class='card cardBackground border-0 shadow' style='width: 16rem; height: 19rem'>
                 <img class='card-img-top' src='{$recipe['imageUrl']}'>
                 <div class='card-body p-2'>
-                    <p class='card-title grey mb-4 fw-normal'>{$recipe['title']}</p>
+                    <p class='card-title grey mb-4 fw-normal card-height'>{$recipe['title']}</p>
                     <div class='row d-flex justify-content-between'>
                         <div class='col-7 d-flex'>
                             <img class='timer flex-shrink-0' src='./dist/images/timer.png'> 

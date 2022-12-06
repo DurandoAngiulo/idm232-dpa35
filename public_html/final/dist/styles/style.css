@@ -100,7 +100,9 @@ label {
   margin: 1rem 0;
   width: auto;
 }
-
+.card-height {
+  height: 60px;
+}
 .footer {
   height: 100px;
   background-color: var(--cardbg);
