@@ -31,7 +31,7 @@ if ($result) {
 
 else {
     $error_message = 'Sorry there was an error creating the user: ' . mysqli_error($db_connection);
-    var_dump($query);
+    
 die;
     redirect_to('/admin/services?error=' . $error_message);
 }

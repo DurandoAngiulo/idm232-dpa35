@@ -68,7 +68,7 @@ if ($results->num_rows > 0) {
               <div class='card cardBackground border-0 shadow' style='width: 16rem;'>
                   <img class='card-img-top' src='{$recipes_results['imageUrl']}'>
                   <div class='card-body p-2'>
-                      <p class='card-title grey mb-4 fw-normal'>{$recipes_results['title']}</p>
+                      <p class='card-title grey mb-4 fw-normal card-height'>{$recipes_results['title']}</p>
                       <div class='row d-flex justify-content-between'>
                           <div class='col-7 d-flex'>
                               <img class='timer flex-shrink-0' src='../../dist/images/timer.png'> 
