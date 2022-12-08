@@ -6,7 +6,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav container-fluid d-flex">
-        <a class="nav-link" href="<?php echo site_url(); ?>/explore.php">Explore</a>
+        <a class="nav-link me-auto" href="<?php echo site_url(); ?>/explore.php">Explore</a>
         
         <a class='nav-link' href="<?php echo site_url(); ?>/search.php"><img src= "<?php echo site_url(); ?>/dist/images/search.svg"></a>
         <!-- <a class="nav-link red" href='#'>Log In</a>
